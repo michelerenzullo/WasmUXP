@@ -1,0 +1,116 @@
+{
+    "manifestVersion": 5,  
+    "id": "com.example.wasmuxp",
+    "name": "WasmUXP",
+    "version": "1.0.0",
+    "main": "index.html",
+    "resources": [
+        "WasmUXP.js",
+        "WasmUXP.wasm"
+     ],	
+    "host": [
+        {
+            "app": "PS",
+            "minVersion": "22.0.0",
+            "data": {
+                "apiVersion": 2
+            }
+        }
+    ],
+    "requiredPermissions": {
+        "localFileSystem": "fullAccess"
+    },
+    "entrypoints": [
+        {
+            "type": "panel",
+            "id": "PluginTest",
+            "label": {
+                "default": "WasmUXP"
+            },
+            "minimumSize": {
+                "width": 200,
+                "height": 200
+            },
+            "maximumSize": {
+                "width": 600,
+                "height": 600
+            },
+            "preferredDockedSize": {
+                "width": 580,
+                "height": 296
+            },
+            "preferredFloatingSize": {
+                "width": 580,
+                "height": 296
+            },
+            "icons": [
+                {
+                    "width": 23,
+                    "height": 23,
+                    "path": "icons/DarkTheme.png",
+                    "scale": [
+                        1,
+                        2
+                    ],
+                    "theme": [
+                        "dark",
+                        "darkest"
+                    ],
+                    "species": [
+                        "chrome"
+                    ]
+                },
+                {
+                    "width": 23,
+                    "height": 23,
+                    "path": "icons/LightTheme.png",
+                    "scale": [
+                        1,
+                        2
+                    ],
+                    "theme": [
+                        "lightest",
+                        "light"
+                    ],
+                    "species": [
+                        "chrome"
+                    ]
+                }
+            ]
+        }
+    ],
+    "icons": [
+        {
+            "width": 48,
+            "height": 48,
+            "path": "icons/DarkTheme_plugin.png",
+            "scale": [
+                1,
+                2
+            ],
+            "theme": [
+                "dark",
+                "darkest"
+            ],
+            "species": [
+                "pluginList"
+            ]
+        },
+        {
+            "width": 48,
+            "height": 48,
+            "path": "icons/LightTheme_plugin.png",
+            "scale": [
+                1,
+                2
+            ],
+            "theme": [
+                "lightest",
+                "light"
+            ],
+            "species": [
+                "pluginList"
+            ]
+        }
+    ]
+}
